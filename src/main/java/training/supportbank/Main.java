@@ -2,23 +2,36 @@ package training.supportbank;
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 import org.apache.commons.text.WordUtils;
-
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main {
     static ArrayList<Person> people = new ArrayList<>();
     static Boolean running = true;
+    private static final Logger LOGGER = LogManager.getLogger(Main.class.getName());
 
     public static void main(String[] args) throws IOException, CsvException {
+        LOGGER.info("Program Launched");
         CSVReader reader = new CSVReader(new FileReader("Transactions2014.csv"));
-        List<String[]> csv = reader.readAll();
+        LOGGER.info("Opening Transactions2014.csv");
+        CSVReader read2 = new CSVReader(new FileReader("DodgyTransactions2015.csv"));
+        LOGGER.info("Opening DogdyTransactions2015.csv");
+        List<String[]> dodgeCsv = read2.readAll();
+        List<String[]> normCsv = reader.readAll();
+        List<String[]> csv = Stream.concat(normCsv.stream(), dodgeCsv.stream()).collect(Collectors.toList());
         for (int i = 1; i <= csv.size()-1; i++) {
             String record = Arrays.toString(csv.get(i));
             String[] splitRecord = record.split(",", 5);
             String name = splitRecord[1].substring(1);
-            if (people.size() == 0) {
+            if (name.equals("From")){
+                LOGGER.warn("Header parsed!");
+            } else if (people.size() == 0) {
                 people.add(new Person(name));
             } else {
                 for (int j = 0; j <= people.size(); j++) {

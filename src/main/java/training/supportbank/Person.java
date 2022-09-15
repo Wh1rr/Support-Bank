@@ -30,12 +30,11 @@ public class Person {
             BigDecimal tAmount = new BigDecimal(amount);
                 if (from.equals(this.name)) {
                     transactions.add(new Transaction(tAmount, reason, date, to));
+                    this.total = this.total.add(tAmount);
                 } else if (to.equals(this.name)) {
-                    BigDecimal negative = tAmount;
-                    tAmount = negative.negate();
                     transactions.add(new Transaction(tAmount, reason, date, from));
+                    this.total = this.total.subtract(tAmount);
                 }
-                this.total = this.total.add(tAmount);
             }
         System.out.println("\n" + this.name + " - Person created");
     }
