@@ -8,29 +8,31 @@ import java.io.IOException;
 import java.util.*;
 
 public class Main {
-    static ArrayList<Person> people = new ArrayList<Person>();
+    static ArrayList<Person> people = new ArrayList<>();
     static Boolean running = true;
 
     public static void main(String[] args) throws IOException, CsvException {
         CSVReader reader = new CSVReader(new FileReader("Transactions2014.csv"));
-        System.out.println("Test!");
         List<String[]> csv = reader.readAll();
-        csv = csv.toArray();
-        System.out.println(Arrays.toString(csv));
-        for (int i = 0; i <= csv.size(); i++){
-            //System.out.println(Arrays.toString(csv.get(i)));
-            if (i % 10 == 2){
-                for (i = 0; i <= people.size()-1; i++){
-                    if (Arrays.toString(csv.get(i)).equals(people.get(i).name)){
+        for (int i = 1; i <= csv.size()-1; i++) {
+            String record = Arrays.toString(csv.get(i));
+            String[] splitRecord = record.split(",", 5);
+            String name = splitRecord[1].substring(1);
+            if (people.size() == 0) {
+                people.add(new Person(name));
+            } else {
+                for (int j = 0; j <= people.size(); j++) {
+                    if (name.equals(people.get(j).name)) {
                         break;
-                    } else if (i == people.size()-1){
-                        people.add(new Person(Arrays.toString(csv.get(i))));
+                    } else if (j == people.size()-1) {
+                        people.add(new Person(name));
+                        break;
                     }
                 }
             }
         }
         while (running = true){
-            System.out.println("Ready for request");
+            System.out.println("\nReady for request");
             Scanner input = new Scanner(System.in);
             String text = input.nextLine();
             text = text.toUpperCase();
@@ -39,20 +41,21 @@ public class Main {
             } else if (text.startsWith("LIST")){
                 text = text.replace("LIST", "");
                 text = text.toLowerCase();
-                text = WordUtils.capitalizeFully(text);
+                text = WordUtils.capitalizeFully(text).substring(1);
+                System.out.println(text);
                 list(text);
             }
         }
     }
     public static void listAll(){
-        for (int i = 0; i <= people.size(); i++){
-            System.out.println(people.get(i-1).getTotal());
+        for (int i = 0; i <= people.size()-1; i++){
+            System.out.println(people.get(i).name + " - " + people.get(i).getTotal());
         }
     }
     public static void list(String account) {
-        for (int i = 0; i <= people.size(); i++) {
-            if (Objects.equals(people.get(i-1).name, account)){
-                people.get(i-1).allTransactions();
+        for (int i = 0; i <= people.size()-1; i++) {
+            if (Objects.equals(people.get(i).name, account)){
+                people.get(i).allTransactions();
             }
         }
     }
