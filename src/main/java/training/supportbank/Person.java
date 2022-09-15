@@ -15,8 +15,9 @@ public class Person {
     BigDecimal total= BigDecimal.ZERO;
     ArrayList<Transaction> transactions = new ArrayList<>();
     DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.ENGLISH);
+    private static final Logger LOGGER = LogManager.getLogger(Person.class.getName());
 
-    public Person(String name, Logger LOGGER) throws IOException, CsvException {
+    public Person(String name) throws IOException, CsvException {
         System.out.println("\nCreating person..."+ name);
         this.name = name;
         CSVReader reader = new CSVReader(new FileReader("Transactions2014.csv"));
@@ -30,12 +31,22 @@ public class Person {
             try {
                 String record = Arrays.toString(csv.get(i));
                 String[] splitRecord = record.split(",", 5);
-                LocalDate date = LocalDate.parse(splitRecord[0].substring(1), format);
-                String from = splitRecord[1].substring(1);
-                String to = splitRecord[2].substring(1);
-                String reason = splitRecord[3].substring(1);
-                String amount = splitRecord[4].substring(1).substring(0, splitRecord[4].length() - 2);
-                BigDecimal tAmount = new BigDecimal(amount);
+                LocalDate date;
+                String from;
+                String to;
+                String reason;
+                String amount;
+                BigDecimal tAmount;
+                try{
+                    date = LocalDate.parse(splitRecord[0].substring(1), format);
+                    from = splitRecord[1].substring(1);
+                    to = splitRecord[2].substring(1);
+                    reason = splitRecord[3].substring(1);
+                    amount = splitRecord[4].substring(1).substring(0, splitRecord[4].length() - 2);
+                    tAmount = new BigDecimal(amount);
+                } catch(Exception e){
+                    LOGGER.error("Data error - " + e);
+                    continue;}
                 if (from.equals(this.name)) {
                     transactions.add(new Transaction(tAmount, reason, date, to));
                     this.total = this.total.add(tAmount);

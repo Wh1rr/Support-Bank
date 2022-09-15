@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 public class Main {
     static ArrayList<Person> people = new ArrayList<>();
     static Boolean running = true;
-    public static Logger LOGGER = LogManager.getLogger(Main.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(Main.class.getName());
 
     public static void main(String[] args){
         try {
@@ -31,13 +31,13 @@ public class Main {
                 if (name.equals("From")) {
                     LOGGER.warn("Header parsed!");
                 } else if (people.size() == 0) {
-                    people.add(new Person(name, LOGGER));
+                    people.add(new Person(name));
                 } else {
                     for (int j = 0; j <= people.size(); j++) {
                         if (name.equals(people.get(j).name)) {
                             break;
                         } else if (j == people.size() - 1) {
-                            people.add(new Person(name, LOGGER));
+                            people.add(new Person(name));
                             break;
                         }
                     }
