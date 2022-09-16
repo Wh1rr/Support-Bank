@@ -7,36 +7,58 @@ import java.math.BigDecimal;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Person {
     String name;
     BigDecimal total= BigDecimal.ZERO;
     ArrayList<Transaction> transactions = new ArrayList<>();
     DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.ENGLISH);
+    private static final Logger LOGGER = LogManager.getLogger(Person.class.getName());
 
     public Person(String name) throws IOException, CsvException {
         System.out.println("\nCreating person..."+ name);
         this.name = name;
         CSVReader reader = new CSVReader(new FileReader("Transactions2014.csv"));
+        CSVReader read2 = new CSVReader(new FileReader("DodgyTransactions2015.csv"));
+        List<String[]> dodgeCsv = read2.readAll();
         List<String[]> csv = reader.readAll();
+        for (int j =1; j <= dodgeCsv.size()-1; j++){
+            csv.add(dodgeCsv.get(j));
+        }
         for (int i = 1; i <= csv.size()-1; i++) {
-            String record = Arrays.toString(csv.get(i));
-            String[] splitRecord = record.split(",", 5);
-            LocalDate date = LocalDate.parse(splitRecord[0].substring(1), format);
-            String from = splitRecord[1].substring(1);
-            String to = splitRecord[2].substring(1);
-            String reason = splitRecord[3].substring(1);
-            String amount = splitRecord[4].substring(1).substring(0, splitRecord[4].length()-2);
-            BigDecimal tAmount = new BigDecimal(amount);
+            try {
+                String record = Arrays.toString(csv.get(i));
+                String[] splitRecord = record.split(",", 5);
+                LocalDate date;
+                String from;
+                String to;
+                String reason;
+                String amount;
+                BigDecimal tAmount;
+                try{
+                    date = LocalDate.parse(splitRecord[0].substring(1), format);
+                    from = splitRecord[1].substring(1);
+                    to = splitRecord[2].substring(1);
+                    reason = splitRecord[3].substring(1);
+                    amount = splitRecord[4].substring(1).substring(0, splitRecord[4].length() - 2);
+                    tAmount = new BigDecimal(amount);
+                } catch(Exception e){
+                    LOGGER.error("Data error - " + e);
+                    continue;}
                 if (from.equals(this.name)) {
                     transactions.add(new Transaction(tAmount, reason, date, to));
+                    this.total = this.total.add(tAmount);
                 } else if (to.equals(this.name)) {
-                    BigDecimal negative = tAmount;
-                    tAmount = negative.negate();
                     transactions.add(new Transaction(tAmount, reason, date, from));
+                    this.total = this.total.subtract(tAmount);
                 }
-                this.total = this.total.add(tAmount);
+            } catch(Exception e){
+                LOGGER.error("Creating transaction - " + e);
+                transactions.remove(transactions.size()-1);
             }
+        }
         System.out.println("\n" + this.name + " - Person created");
     }
 
