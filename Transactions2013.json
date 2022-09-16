@@ -1,0 +1,1017 @@
+[
+  {
+    "date": "2013-01-01",
+    "fromAccount": "Jon A",
+    "toAccount": "Gergana I",
+    "narrative": "Sandbox Help",
+    "amount": 2.14
+  },
+  {
+    "date": "2013-01-04",
+    "fromAccount": "Chris W",
+    "toAccount": "Dan W",
+    "narrative": "Coffee",
+    "amount": 10.53
+  },
+  {
+    "date": "2013-01-05",
+    "fromAccount": "Stephen S",
+    "toAccount": "Tim L",
+    "narrative": "Sandcastle Help",
+    "amount": 10.57
+  },
+  {
+    "date": "2013-01-09",
+    "fromAccount": "Todd",
+    "toAccount": "Rob S",
+    "narrative": "Coffee",
+    "amount": 8.19
+  },
+  {
+    "date": "2013-01-13",
+    "fromAccount": "Todd",
+    "toAccount": "Sarah T",
+    "narrative": "Coffee",
+    "amount": 1.01
+  },
+  {
+    "date": "2013-01-15",
+    "fromAccount": "Todd",
+    "toAccount": "Laura B",
+    "narrative": "Golf Bets",
+    "amount": 2.71
+  },
+  {
+    "date": "2013-01-18",
+    "fromAccount": "Laura B",
+    "toAccount": "Tim L",
+    "narrative": "Jenkins Fees",
+    "amount": 7.17
+  },
+  {
+    "date": "2013-01-22",
+    "fromAccount": "Dan W",
+    "toAccount": "Rob S",
+    "narrative": "Sandcastle Help",
+    "amount": 11.12
+  },
+  {
+    "date": "2013-01-25",
+    "fromAccount": "Ben B",
+    "toAccount": "Jon A",
+    "narrative": "Coffee",
+    "amount": 4.86
+  },
+  {
+    "date": "2013-01-28",
+    "fromAccount": "Stephen S",
+    "toAccount": "Ben B",
+    "narrative": "Services Rendered",
+    "amount": 1.92
+  },
+  {
+    "date": "2013-01-30",
+    "fromAccount": "Sarah T",
+    "toAccount": "Todd",
+    "narrative": "Jenkins Fees",
+    "amount": 11.95
+  },
+  {
+    "date": "2013-01-31",
+    "fromAccount": "Sarah T",
+    "toAccount": "Chris W",
+    "narrative": "Poker Winnings",
+    "amount": 7.55
+  },
+  {
+    "date": "2013-02-04",
+    "fromAccount": "Sam N",
+    "toAccount": "Sarah T",
+    "narrative": "Arcade Social",
+    "amount": 5.52
+  },
+  {
+    "date": "2013-02-06",
+    "fromAccount": "Dan W",
+    "toAccount": "Rob S",
+    "narrative": "Snooker Night",
+    "amount": 8.07
+  },
+  {
+    "date": "2013-02-07",
+    "fromAccount": "Rob S",
+    "toAccount": "Laura B",
+    "narrative": "Beers",
+    "amount": 7.63
+  },
+  {
+    "date": "2013-02-10",
+    "fromAccount": "Stephen S",
+    "toAccount": "Todd",
+    "narrative": "Snooker Night",
+    "amount": 10.4
+  },
+  {
+    "date": "2013-02-12",
+    "fromAccount": "Ben B",
+    "toAccount": "Chris W",
+    "narrative": "Misc Morale",
+    "amount": 5.76
+  },
+  {
+    "date": "2013-02-15",
+    "fromAccount": "Sam N",
+    "toAccount": "Chris W",
+    "narrative": "Lunch",
+    "amount": 1.54
+  },
+  {
+    "date": "2013-02-18",
+    "fromAccount": "Sarah T",
+    "toAccount": "Sam N",
+    "narrative": "Coffee",
+    "amount": 6.98
+  },
+  {
+    "date": "2013-02-22",
+    "fromAccount": "Chris W",
+    "toAccount": "Tim L",
+    "narrative": "Lunch",
+    "amount": 8.77
+  },
+  {
+    "date": "2013-02-26",
+    "fromAccount": "Sarah T",
+    "toAccount": "Stephen S",
+    "narrative": "Audit and Other Financial Services",
+    "amount": 5.94
+  },
+  {
+    "date": "2013-02-27",
+    "fromAccount": "Jon A",
+    "toAccount": "Chris W",
+    "narrative": "Rails Consultancy",
+    "amount": 10.58
+  },
+  {
+    "date": "2013-03-02",
+    "fromAccount": "Gergana I",
+    "toAccount": "Stephen S",
+    "narrative": "Audit and Other Financial Services",
+    "amount": 1.73
+  },
+  {
+    "date": "2013-03-06",
+    "fromAccount": "Laura B",
+    "toAccount": "Sam N",
+    "narrative": "Stationary Items",
+    "amount": 7.26
+  },
+  {
+    "date": "2013-03-08",
+    "fromAccount": "Ben B",
+    "toAccount": "Sarah T",
+    "narrative": "Pokemon Training",
+    "amount": 6.2
+  },
+  {
+    "date": "2013-03-12",
+    "fromAccount": "Todd",
+    "toAccount": "Jon A",
+    "narrative": "Automated Testing Services",
+    "amount": 0.9
+  },
+  {
+    "date": "2013-03-14",
+    "fromAccount": "Todd",
+    "toAccount": "Chris W",
+    "narrative": "Rails Consultancy",
+    "amount": 8.97
+  },
+  {
+    "date": "2013-03-17",
+    "fromAccount": "Dan W",
+    "toAccount": "Chris W",
+    "narrative": "Audit and Other Financial Services",
+    "amount": 3.34
+  },
+  {
+    "date": "2013-03-20",
+    "fromAccount": "Gergana I",
+    "toAccount": "Rob S",
+    "narrative": "Stationary Items",
+    "amount": 2.85
+  },
+  {
+    "date": "2013-03-22",
+    "fromAccount": "Chris W",
+    "toAccount": "Laura B",
+    "narrative": "Git-Fu Rendered",
+    "amount": 4.15
+  },
+  {
+    "date": "2013-03-24",
+    "fromAccount": "Gergana I",
+    "toAccount": "Stephen S",
+    "narrative": "Coffee",
+    "amount": 2.39
+  },
+  {
+    "date": "2013-03-27",
+    "fromAccount": "Stephen S",
+    "toAccount": "Dan W",
+    "narrative": "Jenkins Fees",
+    "amount": 7.82
+  },
+  {
+    "date": "2013-03-28",
+    "fromAccount": "Ben B",
+    "toAccount": "Stephen S",
+    "narrative": "Sandbox Help",
+    "amount": 6.36
+  },
+  {
+    "date": "2013-04-01",
+    "fromAccount": "Rob S",
+    "toAccount": "Tim L",
+    "narrative": "Coffee",
+    "amount": 4.77
+  },
+  {
+    "date": "2013-04-03",
+    "fromAccount": "Sarah T",
+    "toAccount": "Stephen S",
+    "narrative": "Lunch",
+    "amount": 2.64
+  },
+  {
+    "date": "2013-04-05",
+    "fromAccount": "Stephen S",
+    "toAccount": "Chris W",
+    "narrative": "Coffee",
+    "amount": 3.4
+  },
+  {
+    "date": "2013-04-08",
+    "fromAccount": "Tim L",
+    "toAccount": "Todd",
+    "narrative": "Jenkins Fees",
+    "amount": 4.27
+  },
+  {
+    "date": "2013-04-09",
+    "fromAccount": "Todd",
+    "toAccount": "Gergana I",
+    "narrative": "Misc Morale",
+    "amount": 2.6
+  },
+  {
+    "date": "2013-04-11",
+    "fromAccount": "Gergana I",
+    "toAccount": "Sarah T",
+    "narrative": "Lunch",
+    "amount": 3
+  },
+  {
+    "date": "2013-04-15",
+    "fromAccount": "Rob S",
+    "toAccount": "Chris W",
+    "narrative": "Coffee",
+    "amount": 5.49
+  },
+  {
+    "date": "2013-04-18",
+    "fromAccount": "Gergana I",
+    "toAccount": "Ben B",
+    "narrative": "Lunch",
+    "amount": 9.07
+  },
+  {
+    "date": "2013-04-21",
+    "fromAccount": "Todd",
+    "toAccount": "Sarah T",
+    "narrative": "Sandcastle Help",
+    "amount": 5.32
+  },
+  {
+    "date": "2013-04-24",
+    "fromAccount": "Ben B",
+    "toAccount": "Tim L",
+    "narrative": "Fantasy Football",
+    "amount": 1.15
+  },
+  {
+    "date": "2013-04-25",
+    "fromAccount": "Stephen S",
+    "toAccount": "Jon A",
+    "narrative": "Coffee",
+    "amount": 2.47
+  },
+  {
+    "date": "2013-04-26",
+    "fromAccount": "Stephen S",
+    "toAccount": "Jon A",
+    "narrative": "Misc Morale",
+    "amount": 9.1
+  },
+  {
+    "date": "2013-04-27",
+    "fromAccount": "Ben B",
+    "toAccount": "Chris W",
+    "narrative": "Rails Consultancy",
+    "amount": 9.91
+  },
+  {
+    "date": "2013-05-01",
+    "fromAccount": "Ben B",
+    "toAccount": "Dan W",
+    "narrative": "Git-Fu Rendered",
+    "amount": 9.85
+  },
+  {
+    "date": "2013-05-04",
+    "fromAccount": "Laura B",
+    "toAccount": "Dan W",
+    "narrative": "Coffee",
+    "amount": 1.34
+  },
+  {
+    "date": "2013-05-05",
+    "fromAccount": "Sarah T",
+    "toAccount": "Ben B",
+    "narrative": "Beers",
+    "amount": 0.51
+  },
+  {
+    "date": "2013-05-06",
+    "fromAccount": "Todd",
+    "toAccount": "Dan W",
+    "narrative": "Git-Fu Rendered",
+    "amount": 4.92
+  },
+  {
+    "date": "2013-05-08",
+    "fromAccount": "Chris W",
+    "toAccount": "Tim L",
+    "narrative": "Coffee",
+    "amount": 5.94
+  },
+  {
+    "date": "2013-05-09",
+    "fromAccount": "Gergana I",
+    "toAccount": "Tim L",
+    "narrative": "White Water Rafting",
+    "amount": 2.27
+  },
+  {
+    "date": "2013-05-13",
+    "fromAccount": "Todd",
+    "toAccount": "Ben B",
+    "narrative": "Coffee",
+    "amount": 11.07
+  },
+  {
+    "date": "2013-05-14",
+    "fromAccount": "Ben B",
+    "toAccount": "Dan W",
+    "narrative": "Rails Consultancy",
+    "amount": 9.96
+  },
+  {
+    "date": "2013-05-18",
+    "fromAccount": "Laura B",
+    "toAccount": "Sarah T",
+    "narrative": "Lunch",
+    "amount": 11.94
+  },
+  {
+    "date": "2013-05-22",
+    "fromAccount": "Stephen S",
+    "toAccount": "Sam N",
+    "narrative": "Pokemon Training",
+    "amount": 9.24
+  },
+  {
+    "date": "2013-05-25",
+    "fromAccount": "Stephen S",
+    "toAccount": "Chris W",
+    "narrative": "Sandbox Help",
+    "amount": 2.85
+  },
+  {
+    "date": "2013-05-29",
+    "fromAccount": "Stephen S",
+    "toAccount": "Ben B",
+    "narrative": "Audit and Other Financial Services",
+    "amount": 1.51
+  },
+  {
+    "date": "2013-06-02",
+    "fromAccount": "Todd",
+    "toAccount": "Ben B",
+    "narrative": "Golf Bets",
+    "amount": 11.83
+  },
+  {
+    "date": "2013-06-03",
+    "fromAccount": "Chris W",
+    "toAccount": "Rob S",
+    "narrative": "Lunch",
+    "amount": 2.16
+  },
+  {
+    "date": "2013-06-05",
+    "fromAccount": "Rob S",
+    "toAccount": "Dan W",
+    "narrative": "Golf Bets",
+    "amount": 1.96
+  },
+  {
+    "date": "2013-06-06",
+    "fromAccount": "Todd",
+    "toAccount": "Jon A",
+    "narrative": "Pokemon Training",
+    "amount": 1.06
+  },
+  {
+    "date": "2013-06-10",
+    "fromAccount": "Sarah T",
+    "toAccount": "Gergana I",
+    "narrative": "Lego Assistance",
+    "amount": 10.81
+  },
+  {
+    "date": "2013-06-12",
+    "fromAccount": "Jon A",
+    "toAccount": "Ben B",
+    "narrative": "Sandcastle Help",
+    "amount": 6.75
+  },
+  {
+    "date": "2013-06-13",
+    "fromAccount": "Ben B",
+    "toAccount": "Sarah T",
+    "narrative": "Poker Winnings",
+    "amount": 5.15
+  },
+  {
+    "date": "2013-06-16",
+    "fromAccount": "Ben B",
+    "toAccount": "Dan W",
+    "narrative": "Misc Morale",
+    "amount": 9.24
+  },
+  {
+    "date": "2013-06-19",
+    "fromAccount": "Laura B",
+    "toAccount": "Jon A",
+    "narrative": "Coffee",
+    "amount": 3.68
+  },
+  {
+    "date": "2013-06-21",
+    "fromAccount": "Dan W",
+    "toAccount": "Todd",
+    "narrative": "Lunch",
+    "amount": 5.43
+  },
+  {
+    "date": "2013-06-22",
+    "fromAccount": "Chris W",
+    "toAccount": "Tim L",
+    "narrative": "Stationary Items",
+    "amount": 0.98
+  },
+  {
+    "date": "2013-06-23",
+    "fromAccount": "Stephen S",
+    "toAccount": "Jon A",
+    "narrative": "Audit and Other Financial Services",
+    "amount": 6.12
+  },
+  {
+    "date": "2013-06-26",
+    "fromAccount": "Rob S",
+    "toAccount": "Sarah T",
+    "narrative": "Lunch",
+    "amount": 8.39
+  },
+  {
+    "date": "2013-06-27",
+    "fromAccount": "Chris W",
+    "toAccount": "Ben B",
+    "narrative": "Beers",
+    "amount": 10.41
+  },
+  {
+    "date": "2013-06-30",
+    "fromAccount": "Tim L",
+    "toAccount": "Laura B",
+    "narrative": "Lunch",
+    "amount": 6.51
+  },
+  {
+    "date": "2013-07-01",
+    "fromAccount": "Tim L",
+    "toAccount": "Jon A",
+    "narrative": "Misc Morale",
+    "amount": 1.48
+  },
+  {
+    "date": "2013-07-04",
+    "fromAccount": "Tim L",
+    "toAccount": "Chris W",
+    "narrative": "Poker Winnings",
+    "amount": 5.63
+  },
+  {
+    "date": "2013-07-05",
+    "fromAccount": "Stephen S",
+    "toAccount": "Sam N",
+    "narrative": "Lunch",
+    "amount": 6.73
+  },
+  {
+    "date": "2013-07-07",
+    "fromAccount": "Jon A",
+    "toAccount": "Rob S",
+    "narrative": "Lunch",
+    "amount": 6.69
+  },
+  {
+    "date": "2013-07-10",
+    "fromAccount": "Dan W",
+    "toAccount": "Sarah T",
+    "narrative": "Lunch",
+    "amount": 3.88
+  },
+  {
+    "date": "2013-07-13",
+    "fromAccount": "Chris W",
+    "toAccount": "Tim L",
+    "narrative": "Misc Morale",
+    "amount": 2.08
+  },
+  {
+    "date": "2013-07-16",
+    "fromAccount": "Stephen S",
+    "toAccount": "Gergana I",
+    "narrative": "Coffee",
+    "amount": 6.95
+  },
+  {
+    "date": "2013-07-19",
+    "fromAccount": "Dan W",
+    "toAccount": "Stephen S",
+    "narrative": "Arcade Social",
+    "amount": 3.21
+  },
+  {
+    "date": "2013-07-23",
+    "fromAccount": "Sarah T",
+    "toAccount": "Stephen S",
+    "narrative": "Services Rendered",
+    "amount": 11.17
+  },
+  {
+    "date": "2013-07-27",
+    "fromAccount": "Ben B",
+    "toAccount": "Tim L",
+    "narrative": "Coffee",
+    "amount": 4.29
+  },
+  {
+    "date": "2013-07-30",
+    "fromAccount": "Ben B",
+    "toAccount": "Todd",
+    "narrative": "Beers",
+    "amount": 0.69
+  },
+  {
+    "date": "2013-07-31",
+    "fromAccount": "Dan W",
+    "toAccount": "Sam N",
+    "narrative": "Pokemon Training",
+    "amount": 1.2
+  },
+  {
+    "date": "2013-08-01",
+    "fromAccount": "Ben B",
+    "toAccount": "Todd",
+    "narrative": "Lunch",
+    "amount": 11.18
+  },
+  {
+    "date": "2013-08-05",
+    "fromAccount": "Laura B",
+    "toAccount": "Tim L",
+    "narrative": "Jenkins Fees",
+    "amount": 11.34
+  },
+  {
+    "date": "2013-08-07",
+    "fromAccount": "Jon A",
+    "toAccount": "Rob S",
+    "narrative": "Poker Winnings",
+    "amount": 10.78
+  },
+  {
+    "date": "2013-08-08",
+    "fromAccount": "Gergana I",
+    "toAccount": "Stephen S",
+    "narrative": "Lunch",
+    "amount": 10.07
+  },
+  {
+    "date": "2013-08-11",
+    "fromAccount": "Stephen S",
+    "toAccount": "Chris W",
+    "narrative": "Lunch",
+    "amount": 7.27
+  },
+  {
+    "date": "2013-08-13",
+    "fromAccount": "Gergana I",
+    "toAccount": "Chris W",
+    "narrative": "Sandcastle Help",
+    "amount": 9.96
+  },
+  {
+    "date": "2013-08-16",
+    "fromAccount": "Gergana I",
+    "toAccount": "Ben B",
+    "narrative": "Misc Morale",
+    "amount": 10.91
+  },
+  {
+    "date": "2013-08-19",
+    "fromAccount": "Tim L",
+    "toAccount": "Sam N",
+    "narrative": "Coffee",
+    "amount": 7.51
+  },
+  {
+    "date": "2013-08-22",
+    "fromAccount": "Sarah T",
+    "toAccount": "Laura B",
+    "narrative": "Misc Morale",
+    "amount": 7.05
+  },
+  {
+    "date": "2013-08-23",
+    "fromAccount": "Todd",
+    "toAccount": "Sam N",
+    "narrative": "Beers",
+    "amount": 0.6
+  },
+  {
+    "date": "2013-08-26",
+    "fromAccount": "Todd",
+    "toAccount": "Rob S",
+    "narrative": "Lunch",
+    "amount": 3.85
+  },
+  {
+    "date": "2013-08-27",
+    "fromAccount": "Sam N",
+    "toAccount": "Gergana I",
+    "narrative": "Fantasy Football",
+    "amount": 5.45
+  },
+  {
+    "date": "2013-08-28",
+    "fromAccount": "Rob S",
+    "toAccount": "Chris W",
+    "narrative": "Jenkins Fees",
+    "amount": 11.13
+  },
+  {
+    "date": "2013-08-31",
+    "fromAccount": "Gergana I",
+    "toAccount": "Laura B",
+    "narrative": "Pokemon Training",
+    "amount": 5.54
+  },
+  {
+    "date": "2013-09-03",
+    "fromAccount": "Chris W",
+    "toAccount": "Ben B",
+    "narrative": "Coffee",
+    "amount": 9.48
+  },
+  {
+    "date": "2013-09-05",
+    "fromAccount": "Dan W",
+    "toAccount": "Tim L",
+    "narrative": "Lunch",
+    "amount": 10.58
+  },
+  {
+    "date": "2013-09-07",
+    "fromAccount": "Rob S",
+    "toAccount": "Laura B",
+    "narrative": "Lunch",
+    "amount": 3.32
+  },
+  {
+    "date": "2013-09-10",
+    "fromAccount": "Tim L",
+    "toAccount": "Ben B",
+    "narrative": "Misc Morale",
+    "amount": 8.68
+  },
+  {
+    "date": "2013-09-12",
+    "fromAccount": "Tim L",
+    "toAccount": "Laura B",
+    "narrative": "Lego Assistance",
+    "amount": 2.53
+  },
+  {
+    "date": "2013-09-13",
+    "fromAccount": "Stephen S",
+    "toAccount": "Laura B",
+    "narrative": "Services Rendered",
+    "amount": 1.96
+  },
+  {
+    "date": "2013-09-16",
+    "fromAccount": "Sam N",
+    "toAccount": "Rob S",
+    "narrative": "Beers",
+    "amount": 2.81
+  },
+  {
+    "date": "2013-09-19",
+    "fromAccount": "Ben B",
+    "toAccount": "Gergana I",
+    "narrative": "Beers",
+    "amount": 5.52
+  },
+  {
+    "date": "2013-09-22",
+    "fromAccount": "Stephen S",
+    "toAccount": "Dan W",
+    "narrative": "Sandbox Help",
+    "amount": 9.28
+  },
+  {
+    "date": "2013-09-23",
+    "fromAccount": "Stephen S",
+    "toAccount": "Dan W",
+    "narrative": "Coffee",
+    "amount": 5.13
+  },
+  {
+    "date": "2013-09-27",
+    "fromAccount": "Chris W",
+    "toAccount": "Sarah T",
+    "narrative": "Stationary Items",
+    "amount": 7.05
+  },
+  {
+    "date": "2013-10-01",
+    "fromAccount": "Todd",
+    "toAccount": "Tim L",
+    "narrative": "Coffee",
+    "amount": 10.13
+  },
+  {
+    "date": "2013-10-04",
+    "fromAccount": "Chris W",
+    "toAccount": "Ben B",
+    "narrative": "Coffee",
+    "amount": 5.96
+  },
+  {
+    "date": "2013-10-08",
+    "fromAccount": "Gergana I",
+    "toAccount": "Laura B",
+    "narrative": "Lunch",
+    "amount": 5.33
+  },
+  {
+    "date": "2013-10-11",
+    "fromAccount": "Todd",
+    "toAccount": "Rob S",
+    "narrative": "Lunch",
+    "amount": 10.62
+  },
+  {
+    "date": "2013-10-12",
+    "fromAccount": "Ben B",
+    "toAccount": "Chris W",
+    "narrative": "Jenkins Fees",
+    "amount": 7.78
+  },
+  {
+    "date": "2013-10-16",
+    "fromAccount": "Laura B",
+    "toAccount": "Rob S",
+    "narrative": "Arcade Social",
+    "amount": 5.71
+  },
+  {
+    "date": "2013-10-17",
+    "fromAccount": "Laura B",
+    "toAccount": "Jon A",
+    "narrative": "Arcade Social",
+    "amount": 7.71
+  },
+  {
+    "date": "2013-10-20",
+    "fromAccount": "Sam N",
+    "toAccount": "Sarah T",
+    "narrative": "Lunch",
+    "amount": 10.6
+  },
+  {
+    "date": "2013-10-23",
+    "fromAccount": "Chris W",
+    "toAccount": "Todd",
+    "narrative": "Lego Assistance",
+    "amount": 3.42
+  },
+  {
+    "date": "2013-10-27",
+    "fromAccount": "Sam N",
+    "toAccount": "Dan W",
+    "narrative": "Misc Morale",
+    "amount": 6.89
+  },
+  {
+    "date": "2013-10-29",
+    "fromAccount": "Dan W",
+    "toAccount": "Rob S",
+    "narrative": "Misc Morale",
+    "amount": 9.99
+  },
+  {
+    "date": "2013-11-01",
+    "fromAccount": "Sarah T",
+    "toAccount": "Laura B",
+    "narrative": "Lunch",
+    "amount": 7.01
+  },
+  {
+    "date": "2013-11-05",
+    "fromAccount": "Stephen S",
+    "toAccount": "Rob S",
+    "narrative": "Spline Reticulation",
+    "amount": 8.3
+  },
+  {
+    "date": "2013-11-07",
+    "fromAccount": "Ben B",
+    "toAccount": "Sarah T",
+    "narrative": "Lunch",
+    "amount": 10.09
+  },
+  {
+    "date": "2013-11-09",
+    "fromAccount": "Rob S",
+    "toAccount": "Tim L",
+    "narrative": "Stationary Items",
+    "amount": 11
+  },
+  {
+    "date": "2013-11-12",
+    "fromAccount": "Rob S",
+    "toAccount": "Sam N",
+    "narrative": "Misc Morale",
+    "amount": 1.25
+  },
+  {
+    "date": "2013-11-15",
+    "fromAccount": "Jon A",
+    "toAccount": "Tim L",
+    "narrative": "Sandbox Help",
+    "amount": 9.13
+  },
+  {
+    "date": "2013-11-18",
+    "fromAccount": "Rob S",
+    "toAccount": "Dan W",
+    "narrative": "Services Rendered",
+    "amount": 9.4
+  },
+  {
+    "date": "2013-11-21",
+    "fromAccount": "Stephen S",
+    "toAccount": "Chris W",
+    "narrative": "Misc Morale",
+    "amount": 2.53
+  },
+  {
+    "date": "2013-11-24",
+    "fromAccount": "Tim L",
+    "toAccount": "Sam N",
+    "narrative": "Rails Consultancy",
+    "amount": 7.59
+  },
+  {
+    "date": "2013-11-28",
+    "fromAccount": "Ben B",
+    "toAccount": "Todd",
+    "narrative": "Golf Bets",
+    "amount": 2.15
+  },
+  {
+    "date": "2013-11-29",
+    "fromAccount": "Ben B",
+    "toAccount": "Sam N",
+    "narrative": "Pokemon Training",
+    "amount": 4.01
+  },
+  {
+    "date": "2013-12-01",
+    "fromAccount": "Sam N",
+    "toAccount": "Sarah T",
+    "narrative": "Lunch",
+    "amount": 6.35
+  },
+  {
+    "date": "2013-12-02",
+    "fromAccount": "Jon A",
+    "toAccount": "Todd",
+    "narrative": "Misc Morale",
+    "amount": 10.19
+  },
+  {
+    "date": "2013-12-05",
+    "fromAccount": "Ben B",
+    "toAccount": "Sam N",
+    "narrative": "Coffee",
+    "amount": 9
+  },
+  {
+    "date": "2013-12-09",
+    "fromAccount": "Laura B",
+    "toAccount": "Tim L",
+    "narrative": "Rails Consultancy",
+    "amount": 9.39
+  },
+  {
+    "date": "2013-12-12",
+    "fromAccount": "Chris W",
+    "toAccount": "Tim L",
+    "narrative": "Coffee",
+    "amount": 11.44
+  },
+  {
+    "date": "2013-12-13",
+    "fromAccount": "Rob S",
+    "toAccount": "Tim L",
+    "narrative": "Misc Morale",
+    "amount": 9.19
+  },
+  {
+    "date": "2013-12-17",
+    "fromAccount": "Sarah T",
+    "toAccount": "Ben B",
+    "narrative": "Pokemon Training",
+    "amount": 8.72
+  },
+  {
+    "date": "2013-12-19",
+    "fromAccount": "Todd",
+    "toAccount": "Ben B",
+    "narrative": "Pokemon Training",
+    "amount": 8.72
+  },
+  {
+    "date": "2013-12-22",
+    "fromAccount": "Gergana I",
+    "toAccount": "Sam N",
+    "narrative": "Lunch",
+    "amount": 1.32
+  },
+  {
+    "date": "2013-12-24",
+    "fromAccount": "Ben B",
+    "toAccount": "Rob S",
+    "narrative": "Snooker Night",
+    "amount": 10.14
+  },
+  {
+    "date": "2013-12-27",
+    "fromAccount": "Stephen S",
+    "toAccount": "Todd",
+    "narrative": "Spline Reticulation",
+    "amount": 4.34
+  },
+  {
+    "date": "2013-12-28",
+    "fromAccount": "Jon A",
+    "toAccount": "Chris W",
+    "narrative": "Beers",
+    "amount": 5.99
+  },
+  {
+    "date": "2013-12-30",
+    "fromAccount": "Rob S",
+    "toAccount": "Sam N",
+    "narrative": "Misc Morale",
+    "amount": 2.54
+  }
+]
