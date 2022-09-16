@@ -19,64 +19,100 @@ import java.util.stream.Stream;
 
 public class CsvParser{
     private static final Logger LOGGER = LogManager.getLogger(CsvParser.class.getName());
-    static DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH);
+    private static final DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH);
+    private static List<String> loadedCsv;
+
 
     public static void readFile(String filename, Boolean check, ArrayList<Person> people) throws IOException, CsvException {
         LOGGER.info("Opening " + filename);
         List<String[]> csv;
-        if (!check){
+        if (!check) {
             CSVReader reader = new CSVReader(new FileReader("Transactions2014.csv"));
             LOGGER.info("Opening Transactions2014.csv");
+            setLoadedCsv("Transactions2014.csv");
             CSVReader read2 = new CSVReader(new FileReader("DodgyTransactions2015.csv"));
             LOGGER.info("Opening DogdyTransactions2015.csv");
+            setLoadedCsv("DodgyTransactions2015.csv");
             List<String[]> dodgeCsv = read2.readAll();
             csv = reader.readAll();
             csv.addAll(dodgeCsv);
-        try {
-            CSVReader xtraFile = new CSVReader(new FileReader(filename));
-            csv.addAll(xtraFile.readAll());
-        } catch(Exception e){
-            LOGGER.error(filename + " - not found");
-        }
-        for (int i = 1; i <= csv.size() - 1; i++) {
-            String record = Arrays.toString(csv.get(i));
-            String[] splitRecord = record.split(",", 5);
-            String name = splitRecord[1].substring(1);
-            if (name.equals("From")) {
-                LOGGER.warn("Header parsed!");
-            } else if (people.size() == 0) {
-                people.add(new Person(name, csv));
-            } else {
-                for (int j = 0; j <= people.size(); j++) {
-                    if (name.equals(people.get(j).name)) {
-                        break;
-                    } else if (j == people.size() - 1) {
-                        people.add(new Person(name, csv));
-                        break;
+            try {
+                CSVReader xtraFile = new CSVReader(new FileReader(filename));
+                csv.addAll(xtraFile.readAll());
+            } catch (Exception e) {
+                LOGGER.error(filename + " - not found");
+            }
+            for (int i = 1; i <= csv.size() - 1; i++) {
+                String record = Arrays.toString(csv.get(i));
+                String[] splitRecord = record.split(",", 5);
+                String name = splitRecord[1].substring(1);
+                if (name.equals("From")) {
+                    LOGGER.warn("Header parsed!");
+                } else if (people.size() == 0) {
+                    people.add(new Person(name));
+                } else {
+                    for (int j = 0; j <= people.size(); j++) {
+                        if (name.equals(people.get(j).name)) {
+                            break;
+                        } else if (j == people.size() - 1) {
+                            people.add(new Person(name));
+                            break;
+                        }
                     }
                 }
             }
         }
     }
 
-//    private static Optional<Transaction> processLine(String line){
-//        LOGGER.debug("Parsing line " + line);
-//        String[] fields = line.split(",");
-//        if (fields.length != 5){
-//            LOGGER.error(line + "incorrect number of fields");
-//            return Optional.empty();
-//        }
-//        try{
-//            LocalDate date = LocalDate.parse(fields[0], format);
-//            String from = fields[1];
-//            String to = fields[2];
-//            String reason = fields[3];
-//            BigDecimal amount = new BigDecimal(fields[4]);
-//            return Optional.of(new Transaction(amount, reason, date, to));
-//        } catch (DateTimeParseException e){
-//            LOGGER.error(line + " - Incorrect date format");
-//        } catch (NumberFormatException e) {
-//            LOGGER.error(line + "Invalid price");
-//        }
+    static void createTransactions(Person person) throws IOException, CsvException {
+        CSVReader reader = new CSVReader(new FileReader("Transactions2014.csv"));
+        CSVReader read2 = new CSVReader(new FileReader("DodgyTransactions2015.csv"));
+        List<String[]> dodgeCsv = read2.readAll();
+        List<String[]> csv = reader.readAll();
+        for (int j =1; j <= dodgeCsv.size()-1; j++){
+            csv.add(dodgeCsv.get(j));
+        }
+        for (String[] line : csv) {
+            try {
+                String record = Arrays.toString(line);
+                String[] splitRecord = record.split(",", 5);
+                LocalDate date;
+                String from;
+                String to;
+                String reason;
+                String amount;
+                BigDecimal tAmount;
+                date = LocalDate.parse(splitRecord[0].substring(1), format);
+                from = splitRecord[1].substring(1);
+                to = splitRecord[2].substring(1);
+                reason = splitRecord[3].substring(1);
+                amount = splitRecord[4].substring(1).substring(0, splitRecord[4].length() - 2);
+                tAmount = new BigDecimal(amount);
+                if (from.equals(person.name)) {
+                    person.transactions.add(new Transaction(tAmount, reason, date, to));
+                    person.total = person.total.add(tAmount);
+                } else if (to.equals(person.name)) {
+                    person.transactions.add(new Transaction(tAmount, reason, date, from));
+                    person.total = person.total.subtract(tAmount);
+                }
+            } catch (DateTimeParseException e){
+                LOGGER.error("Incorrect date format" + "- on line number " + e.getStackTrace()[3].getLineNumber());
+            } catch (NumberFormatException e) {
+                LOGGER.error("Invalid price" + "- on line number " + e.getStackTrace()[3].getLineNumber());
+            } catch(Exception e){
+                LOGGER.error("Creating transaction - " + e + "- on line number " + e.getStackTrace()[3].getLineNumber());
+                person.transactions.remove(person.transactions.size()-1);
+            }
+        }
+        System.out.println("" + person.name + " - Person created");
+    }
+
+    static List<String> getCsv(){
+        return loadedCsv;
+    }
+    private static void setLoadedCsv(String Csv) {
+        if (loadedCsv.size() == 0) {
+            loadedCsv.set(0, Csv);
+        } else {loadedCsv.add(Csv);}
     }
 }

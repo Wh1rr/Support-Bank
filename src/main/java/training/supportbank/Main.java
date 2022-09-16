@@ -18,7 +18,7 @@ public class Main {
         try {
             LOGGER.info("Program Launched");
             CsvParser.readFile("", openCheck, people);
-            JsonParser.readFile("", openCheck, people);
+            JsonParser.createFile("", openCheck, people);
             openCheck = true;
         } catch (Exception e) {
             LOGGER.error("Processing data - " + e + "- on line number " + e.getStackTrace()[1].getLineNumber());
@@ -65,7 +65,7 @@ public class Main {
         private static void fileImport(String filename) throws IOException, CsvException {
             String extension = filename.substring(filename.lastIndexOf(".") + 1).toLowerCase();
             if (extension.equals("json")) {
-                JsonParser.readFile(filename, openCheck, people);
+                JsonParser.createFile(filename, openCheck, people);
             } else if (extension.equals("csv")) {
                 CsvParser.readFile(filename, openCheck, people);
             } else {
